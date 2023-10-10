@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  border-left: 1px solid #BF616A;
+  border-left: 1px solid #5E81AC;
   padding-left: 1rem;
 }
 
@@ -43,11 +43,15 @@ ul {
 body {
   background-color: #2E3440;
   background-image: url("../img/background.jpg");
+  background-attachment: fixed;
   font-family: "Mooli", sans-serif;
-  color: #D8DEE9;
+  color: #ECEFF4;
 }
 
-/* general */
+main {
+  margin-top: 4rem;
+}
+
 section {
   position: relative;
   padding: 4rem 1rem;
@@ -87,68 +91,6 @@ section {
   }
 }
 
-/* navbar */
-#navbar {
-  height: 4rem;
-  background-color: rgba(0, 0, 0, 0.25);
-  -webkit-backdrop-filter: blur(1rem);
-          backdrop-filter: blur(1rem);
-  padding: 0.5rem;
-}
-@media screen and (min-width: 768px) {
-  #navbar {
-    margin: 1rem auto;
-    width: -moz-max-content;
-    width: max-content;
-    border-radius: 2rem;
-  }
-}
-
-ul.navbar-nav {
-  margin: 0 auto;
-  width: -moz-max-content;
-  width: max-content;
-  display: flex;
-  gap: 1rem;
-}
-
-li.nav-item {
-  height: 3rem;
-}
-li.nav-item a {
-  width: 100%;
-  height: 100%;
-  padding: 0.5rem 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: #D8DEE9;
-  border-radius: 3rem;
-  transition: 0.1s ease-out;
-}
-li.nav-item a span {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  li.nav-item a span {
-    display: initial;
-  }
-}
-@media screen and (min-width: 768px) {
-  li.nav-item a {
-    gap: 1rem;
-  }
-}
-li.nav-item a:hover {
-  background-color: #3B4252;
-  filter: saturate(2);
-}
-li.nav-item a .icon {
-  width: 100%;
-  height: 100%;
-}
-
 .nord-a-100 {
   color: #BF616A;
 }
@@ -167,4 +109,20 @@ li.nav-item a .icon {
 
 .nord-a-500 {
   color: #B48EAD;
+}
+
+.nord-f-100 {
+  color: #8FBCBB;
+}
+
+.nord-f-200 {
+  color: #88C0D0;
+}
+
+.nord-f-300 {
+  color: #81A1C1;
+}
+
+.nord-f-400 {
+  color: #5E81AC;
 }

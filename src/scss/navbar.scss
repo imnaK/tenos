@@ -1,0 +1,68 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+#navbar {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: $navbar-height;
+  background-color: $black-opacity-25;
+  backdrop-filter: blur(1rem);
+  padding: $navbar-padding;
+  border-bottom: 1px solid $nord-pn-400;
+
+  @include respond-to(md) {
+    margin: 1rem auto;
+    width: max-content;
+    border-radius: 2rem;
+    border: 1px solid $nord-pn-400;
+  }
+}
+
+ul.navbar-nav {
+  margin: 0 auto;
+  width: max-content;
+  display: flex;
+  gap: 1rem;
+}
+
+li.nav-item {
+  height: $nav-icon-size;
+
+  a {
+    width: 100%;
+    height: 100%;
+    padding: $nav-icon-padding $nav-icon-padding * 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $nord-ss-100;
+    border-radius: $nav-icon-size;
+    transition: $default-transition;
+
+    span {
+      display: none;
+
+      @include respond-to(md) {
+        display: initial;
+      }
+    }
+
+    @include respond-to(md) {
+      gap: 1rem;
+    }
+
+    &:hover {
+      background-color: $nord-pn-200;
+      filter: saturate(2);
+    }
+
+    .icon {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

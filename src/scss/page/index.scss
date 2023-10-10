@@ -1,0 +1,62 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+header {
+  min-height: 32rem;
+  max-height: 100vh;
+  padding-top: calc($navbar-height + $navbar-padding * 2);
+  background-image: url("../img/index-header.jpg");
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to(md) {
+      flex-direction: row;
+    }
+
+    .header-section {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 4rem 2rem;
+      flex: 1;
+
+      @include respond-to(md) {
+        padding: 8rem 4rem;
+      }
+
+      h1,
+      p {
+        text-shadow: 0 0 1rem #000;
+      }
+
+      &.with-logo {
+        perspective: 1000px;
+        align-items: center;
+
+        img {
+          width: 20rem;
+        }
+      }
+    }
+  }
+}
+
+section {
+  .container {
+    display: flex;
+
+    .left-part,
+    .right-part {
+      flex: 1;
+      padding: 4rem 2rem;
+      background-color: $nord-pn-200;
+      outline: 1px solid $nord-f-100;
+    }
+  }
+}

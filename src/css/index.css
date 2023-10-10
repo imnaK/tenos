@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Mooli";
+  src: url("../fonts/Mooli-Regular.ttf");
+}
+header {
+  min-height: 32rem;
+  max-height: 100vh;
+  padding-top: 5rem;
+  background-image: url("../img/index-header.jpg");
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  header .container {
+    flex-direction: row;
+  }
+}
+header .container .header-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  flex: 1;
+}
+@media screen and (min-width: 768px) {
+  header .container .header-section {
+    padding: 8rem 4rem;
+  }
+}
+header .container .header-section h1,
+header .container .header-section p {
+  text-shadow: 0 0 1rem #000;
+}
+header .container .header-section.with-logo {
+  perspective: 1000px;
+  align-items: center;
+}
+header .container .header-section.with-logo img {
+  width: 20rem;
+}
+
+section .container {
+  display: flex;
+}
+section .container .left-part,
+section .container .right-part {
+  flex: 1;
+  padding: 4rem 2rem;
+  background-color: #3B4252;
+  outline: 1px solid #8FBCBB;
+}
