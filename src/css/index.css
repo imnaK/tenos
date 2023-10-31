@@ -45,13 +45,36 @@ header .container .header-section.with-logo img {
   width: 20rem;
 }
 
+section {
+  border-top: 1px solid #4C566A;
+}
+section:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 992px) {
+  section:nth-child(even) .container {
+    flex-direction: row-reverse;
+  }
+}
 section .container {
   display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  section .container {
+    flex-direction: row;
+  }
+}
+section .container .left-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 section .container .left-part,
 section .container .right-part {
   flex: 1;
   padding: 4rem 2rem;
-  background-color: #3B4252;
-  outline: 1px solid #8FBCBB;
+}
+section .section-icon {
+  font-size: 16rem;
 }

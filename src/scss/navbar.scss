@@ -56,13 +56,20 @@ li.nav-item {
     }
 
     &:hover {
-      background-color: $nord-pn-200;
+      // background-color: $nord-pn-200;
+      background-color: $black-opacity-25;
+      box-shadow: 0 0 1rem 0 #fff7;
       filter: saturate(2);
+
+      .icon {
+        transform: rotate(10deg);
+      }
     }
 
     .icon {
       width: 100%;
       height: 100%;
+      transition: $default-transition;
     }
   }
 }

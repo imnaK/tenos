@@ -62,10 +62,15 @@ li.nav-item a span {
   }
 }
 li.nav-item a:hover {
-  background-color: #3B4252;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.4666666667);
   filter: saturate(2);
+}
+li.nav-item a:hover .icon {
+  transform: rotate(10deg);
 }
 li.nav-item a .icon {
   width: 100%;
   height: 100%;
+  transition: 0.1s ease-out;
 }

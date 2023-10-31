@@ -6,11 +6,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
       "faIcon": ["fa-solid", "fa-circle-notch", "nord-a-100"],
     },
     {
-      "name": "Linux",
-      "link": "linux.html",
-      "faIcon": ["fa-brands", "fa-linux", "nord-a-200"],
-    },
-    {
       "name": "Windows",
       "link": "windows.html",
       "faIcon": ["fa-brands", "fa-microsoft", "nord-a-300"],
@@ -19,6 +14,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
       "name": "MacOS",
       "link": "macos.html",
       "faIcon": ["fa-brands", "fa-apple", "nord-a-400"],
+    },
+    {
+      "name": "Linux",
+      "link": "linux.html",
+      "faIcon": ["fa-brands", "fa-linux", "nord-a-200"],
     },
     {
       "name": "Android",

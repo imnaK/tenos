@@ -48,15 +48,42 @@ header {
 }
 
 section {
+  border-top: 1px solid $nord-pn-400;
+
+  &:nth-child(even) {
+    background-color: $black-opacity-25;
+
+    .container {
+      @include respond-to(lg) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
   .container {
     display: flex;
+    flex-direction: column;
+
+    @include respond-to(lg) {
+      flex-direction: row;
+    }
+
+    .left-part {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     .left-part,
     .right-part {
       flex: 1;
       padding: 4rem 2rem;
-      background-color: $nord-pn-200;
-      outline: 1px solid $nord-f-100;
+      // background-color: $nord-pn-200;
+      // outline: 1px solid $nord-f-100;
     }
+  }
+
+  .section-icon {
+    font-size: 16rem;
   }
 }
