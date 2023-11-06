@@ -3,11 +3,14 @@
   src: url("../fonts/Mooli-Regular.ttf");
 }
 header {
+  position: relative;
   min-height: 32rem;
   max-height: 100vh;
+  height: 100vh;
   padding-top: 5rem;
-  background-image: url("../img/index-header.jpg");
-  background-attachment: fixed;
+  background-image: url("../img/index/header.jpg");
+  background-color: rgba(0, 0, 0, 0.4666666667);
+  background-blend-mode: multiply;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,12 +50,25 @@ header .container .header-section.with-logo img {
 
 section {
   border-top: 1px solid #4C566A;
+  background-size: cover !important;
 }
-section:nth-child(even) {
+section#section-windows {
+  background: linear-gradient(to left, #2E3440 50%, transparent 75%), url("../img/index/section-windows.jpg") no-repeat center center fixed;
+}
+section#section-apple {
+  background: linear-gradient(to right, #2E3440 50%, transparent 75%), url("../img/index/section-apple.jpg") no-repeat center center fixed;
+}
+section#section-linux {
+  background: linear-gradient(to left, #2E3440 50%, transparent 75%), url("../img/index/section-linux.jpg") no-repeat center center fixed;
+}
+section#section-android {
+  background: linear-gradient(to right, #2E3440 50%, transparent 75%), url("../img/index/section-android.jpg") no-repeat center center fixed;
+}
+section:nth-of-type(even) {
   background-color: rgba(0, 0, 0, 0.25);
 }
-@media screen and (min-width: 992px) {
-  section:nth-child(even) .container {
+@media screen and (min-width: 768px) {
+  section:nth-of-type(even) .container {
     flex-direction: row-reverse;
   }
 }
@@ -60,7 +76,7 @@ section .container {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   section .container {
     flex-direction: row;
   }
@@ -75,6 +91,46 @@ section .container .right-part {
   flex: 1;
   padding: 4rem 2rem;
 }
+section .container h2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0 2rem 1rem;
+  border-left: unset;
+  border-bottom: 0.125rem solid #4C566A;
+}
+@media screen and (min-width: 768px) {
+  section .container h2 {
+    margin: initial;
+    padding: 0 0 0 1rem;
+    border-bottom: unset;
+    border-left: 0.125rem solid #4C566A;
+  }
+}
 section .section-icon {
   font-size: 16rem;
+}
+
+#button-down {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  color: #ECEFF4;
+  border: 0.125rem solid currentColor;
+  background-color: rgba(0, 0, 0, 0.25);
+  opacity: 0.75;
+  transition: 0.1s ease-out;
+  box-shadow: 0 0 0.5rem 0 #000;
+}
+#button-down:hover {
+  opacity: 1;
 }

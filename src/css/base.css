@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 0;
+}
+
 a {
   text-decoration: unset;
 }
@@ -54,7 +59,7 @@ main {
 
 section {
   position: relative;
-  padding: 4rem 1rem;
+  padding: 6rem 1rem;
 }
 
 .container {

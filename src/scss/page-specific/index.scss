@@ -2,11 +2,14 @@
 @use "../mixins" as *;
 
 header {
+  position: relative;
   min-height: 32rem;
   max-height: 100vh;
+  height: 100vh;
   padding-top: calc($navbar-height + $navbar-padding * 2);
-  background-image: url("../img/index-header.jpg");
-  background-attachment: fixed;
+  background-image: url("../img/index/header.jpg");
+  background-color: #0007;
+  background-blend-mode: multiply;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,12 +52,29 @@ header {
 
 section {
   border-top: 1px solid $nord-pn-400;
+  background-size: cover !important;
 
-  &:nth-child(even) {
+  &#section-windows {
+    background: linear-gradient(to left, $nord-pn-100 50%, transparent 75%), url("../img/index/section-windows.jpg") no-repeat center center fixed;
+  }
+
+  &#section-apple {
+    background: linear-gradient(to right, $nord-pn-100 50%, transparent 75%), url("../img/index/section-apple.jpg") no-repeat center center fixed;
+  }
+
+  &#section-linux {
+    background: linear-gradient(to left, $nord-pn-100 50%, transparent 75%), url("../img/index/section-linux.jpg") no-repeat center center fixed;
+  }
+
+  &#section-android {
+    background: linear-gradient(to right, $nord-pn-100 50%, transparent 75%), url("../img/index/section-android.jpg") no-repeat center center fixed;
+  }
+
+  &:nth-of-type(even) {
     background-color: $black-opacity-25;
 
     .container {
-      @include respond-to(lg) {
+      @include respond-to(md) {
         flex-direction: row-reverse;
       }
     }
@@ -64,7 +84,7 @@ section {
     display: flex;
     flex-direction: column;
 
-    @include respond-to(lg) {
+    @include respond-to(md) {
       flex-direction: row;
     }
 
@@ -78,12 +98,51 @@ section {
     .right-part {
       flex: 1;
       padding: 4rem 2rem;
-      // background-color: $nord-pn-200;
-      // outline: 1px solid $nord-f-100;
+    }
+
+    h2 {
+      margin-left: auto;
+      margin-right: auto;
+      width: max-content;
+      padding: 0 2rem 1rem;
+      border-left: unset;
+      border-bottom: .125rem solid $nord-pn-400;
+
+      @include respond-to(md) {
+        margin: initial;
+        padding: 0 0 0 1rem;
+        border-bottom: unset;
+        border-left: .125rem solid $nord-pn-400;
+      }
     }
   }
 
   .section-icon {
     font-size: 16rem;
+  }
+}
+
+#button-down {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  color: $nord-ss-300;
+  border: .125rem solid currentColor;
+  background-color: $black-opacity-25;
+  opacity: .75;
+  transition: $default-transition;
+  box-shadow: 0 0 .5rem 0 #000;
+
+  &:hover {
+    opacity: 1;
   }
 }
