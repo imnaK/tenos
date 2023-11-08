@@ -113,6 +113,36 @@ section {
   }
 }
 
+#scroll-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: -3rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $nord-pn-200;
+  box-shadow: $default-shadow;
+  transition: $default-transition;
+
+  &:hover {
+    background-color: $nord-pn-300;
+
+    & > svg {
+      color: $nord-f-400;
+    }
+  }
+
+  & > svg {
+    color: $nord-ss-300;
+    transition: $default-transition;
+  }
+}
+
 .nord-a-100 {
   color: $nord-a-100;
 }

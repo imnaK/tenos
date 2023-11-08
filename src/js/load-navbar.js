@@ -1,4 +1,43 @@
 document.addEventListener("DOMContentLoaded", function (event) {
+  document.body.prepend(getNavElement());
+
+  document.body.append(getScrollToTopElement());
+  // add scroll event listener and only show scroll-to-top when scrolled down
+  window.addEventListener("scroll", function () {
+    updateScrollToTop();
+  });
+  updateScrollToTop();
+});
+
+function updateScrollToTop() {
+  var scroll = document.getElementById("scroll-to-top");
+  if (window.scrollY > 0) {
+    scroll.style.bottom = "1rem";
+  } else {
+    scroll.style.bottom = "-3rem";
+  }
+}
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+function getScrollToTopElement() {
+  var scrollToTop = document.createElement("div");
+  scrollToTop.setAttribute("id", "scroll-to-top");
+  scrollToTop.setAttribute("class", "scroll-to-top");
+  scrollToTop.setAttribute("onclick", "scrollToTop()");
+  scrollToTop.innerHTML = `
+    <span class="icon fa-solid fa-arrow-up nord-a-100"></span>
+  `;
+
+  return scrollToTop;
+}
+
+function getNavElement() {
   const navElements = [
     {
       name: "Home",
@@ -69,6 +108,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // add ul to nav
   nav.appendChild(ul);
 
-  // add nav to body
-  document.body.prepend(nav);
-});
+  return nav;
+}

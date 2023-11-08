@@ -118,6 +118,33 @@ section {
   width: 1rem;
 }
 
+#scroll-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: -3rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b4252;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
+  transition: 0.1s ease-out;
+}
+#scroll-to-top:hover {
+  background-color: #434c5e;
+}
+#scroll-to-top:hover > svg {
+  color: #5e81ac;
+}
+#scroll-to-top > svg {
+  color: #eceff4;
+  transition: 0.1s ease-out;
+}
+
 .nord-a-100 {
   color: #bf616a;
 }
