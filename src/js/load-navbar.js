@@ -1,29 +1,29 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   const navElements = [
     {
-      "name": "Home",
-      "link": "index.html",
-      "faIcon": ["fa-solid", "fa-circle-notch", "nord-a-100"],
+      name: "Home",
+      link: "index.html",
+      faIcon: ["fa-solid", "fa-circle-notch", "nord-a-100"],
     },
     {
-      "name": "Windows",
-      "link": "windows.html",
-      "faIcon": ["fa-brands", "fa-microsoft", "nord-a-300"],
+      name: "Windows",
+      link: "windows.html",
+      faIcon: ["fa-brands", "fa-microsoft", "nord-a-300"],
     },
     {
-      "name": "MacOS",
-      "link": "macos.html",
-      "faIcon": ["fa-brands", "fa-apple", "nord-a-400"],
+      name: "MacOS",
+      link: "apple.html",
+      faIcon: ["fa-brands", "fa-apple", "nord-a-400"],
     },
     {
-      "name": "Linux",
-      "link": "linux.html",
-      "faIcon": ["fa-brands", "fa-linux", "nord-a-200"],
+      name: "Linux",
+      link: "linux.html",
+      faIcon: ["fa-brands", "fa-linux", "nord-a-200"],
     },
     {
-      "name": "Android",
-      "link": "android.html",
-      "faIcon": ["fa-brands", "fa-android", "nord-a-500"],
+      name: "Android",
+      link: "android.html",
+      faIcon: ["fa-brands", "fa-android", "nord-a-500"],
     },
   ];
 
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   ul.setAttribute("class", "navbar-nav");
 
   // for every element in navElements create a nav-item
-  navElements.forEach(element => {
+  navElements.forEach((element) => {
     // create nav-item
     var li = document.createElement("li");
     li.setAttribute("class", "nav-item");
