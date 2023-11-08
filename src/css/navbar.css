@@ -13,7 +13,7 @@
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
   padding: 0.5rem;
-  border-bottom: 1px solid #4C566A;
+  border-bottom: 1px solid #4c566a;
 }
 @media screen and (min-width: 768px) {
   #navbar {
@@ -21,7 +21,7 @@
     width: -moz-max-content;
     width: max-content;
     border-radius: 2rem;
-    border: 1px solid #4C566A;
+    border: 1px solid #4c566a;
   }
 }
 
@@ -44,7 +44,7 @@ li.nav-item a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #D8DEE9;
+  color: #d8dee9;
   border-radius: 3rem;
   transition: 0.1s ease-out;
 }

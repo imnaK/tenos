@@ -92,8 +92,8 @@ section {
 .btn {
   display: block;
   width: max-content;
-  padding: .5rem 1rem;
-  border: .125rem solid currentColor;
+  padding: 0.5rem 1rem;
+  border: 0.125rem solid currentColor;
   border-radius: $default-radius;
 }
 
@@ -104,7 +104,7 @@ section {
   }
 
   &:hover [data-prefix="fas"] {
-    margin-left: .5rem;
+    margin-left: 0.5rem;
     width: 1rem;
   }
 }

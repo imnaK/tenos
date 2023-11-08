@@ -49,20 +49,20 @@ header .container .header-section.with-logo img {
 }
 
 section {
-  border-top: 1px solid #4C566A;
+  border-top: 1px solid #4c566a;
   background-size: cover !important;
 }
 section#section-windows {
-  background: linear-gradient(to left, #2E3440 50%, transparent 75%), url("../img/index/section-windows.jpg") no-repeat center center fixed;
+  background: linear-gradient(to left, #2e3440 50%, transparent 75%), url("../img/index/section-windows.jpg") no-repeat center center fixed;
 }
 section#section-apple {
-  background: linear-gradient(to right, #2E3440 50%, transparent 75%), url("../img/index/section-apple.jpg") no-repeat center center fixed;
+  background: linear-gradient(to right, #2e3440 50%, transparent 75%), url("../img/index/section-apple.jpg") no-repeat center center fixed;
 }
 section#section-linux {
-  background: linear-gradient(to left, #2E3440 50%, transparent 75%), url("../img/index/section-linux.jpg") no-repeat center center fixed;
+  background: linear-gradient(to left, #2e3440 50%, transparent 75%), url("../img/index/section-linux.jpg") no-repeat center center fixed;
 }
 section#section-android {
-  background: linear-gradient(to right, #2E3440 50%, transparent 75%), url("../img/index/section-android.jpg") no-repeat center center fixed;
+  background: linear-gradient(to right, #2e3440 50%, transparent 75%), url("../img/index/section-android.jpg") no-repeat center center fixed;
 }
 section:nth-of-type(even) {
   background-color: rgba(0, 0, 0, 0.25);
@@ -98,14 +98,14 @@ section .container h2 {
   width: max-content;
   padding: 0 2rem 1rem;
   border-left: unset;
-  border-bottom: 0.125rem solid #4C566A;
+  border-bottom: 0.125rem solid #4c566a;
 }
 @media screen and (min-width: 768px) {
   section .container h2 {
     margin: initial;
     padding: 0 0 0 1rem;
     border-bottom: unset;
-    border-left: 0.125rem solid #4C566A;
+    border-left: 0.125rem solid #4c566a;
   }
 }
 section .section-icon {
@@ -124,7 +124,7 @@ section .section-icon {
   align-items: center;
   width: 2rem;
   height: 2rem;
-  color: #ECEFF4;
+  color: #eceff4;
   border: 0.125rem solid currentColor;
   background-color: rgba(0, 0, 0, 0.25);
   opacity: 0.75;

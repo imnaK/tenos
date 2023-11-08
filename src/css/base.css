@@ -33,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  border-left: 1px solid #5E81AC;
+  border-left: 1px solid #5e81ac;
   padding-left: 1rem;
 }
 
@@ -46,11 +46,11 @@ ul {
 }
 
 body {
-  background-color: #2E3440;
+  background-color: #2e3440;
   background-image: url("../img/background.jpg");
   background-attachment: fixed;
   font-family: "Mooli", sans-serif;
-  color: #ECEFF4;
+  color: #eceff4;
 }
 
 main {
@@ -115,37 +115,37 @@ section {
 }
 
 .nord-a-100 {
-  color: #BF616A;
+  color: #bf616a;
 }
 
 .nord-a-200 {
-  color: #D08770;
+  color: #d08770;
 }
 
 .nord-a-300 {
-  color: #EBCB8B;
+  color: #ebcb8b;
 }
 
 .nord-a-400 {
-  color: #A3BE8C;
+  color: #a3be8c;
 }
 
 .nord-a-500 {
-  color: #B48EAD;
+  color: #b48ead;
 }
 
 .nord-f-100 {
-  color: #8FBCBB;
+  color: #8fbcbb;
 }
 
 .nord-f-200 {
-  color: #88C0D0;
+  color: #88c0d0;
 }
 
 .nord-f-300 {
-  color: #81A1C1;
+  color: #81a1c1;
 }
 
 .nord-f-400 {
-  color: #5E81AC;
+  color: #5e81ac;
 }
