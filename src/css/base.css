@@ -53,6 +53,10 @@ body {
   color: #eceff4;
 }
 
+header {
+  border-bottom: 1px solid #4c566a;
+}
+
 main {
   margin-top: 4rem;
 }

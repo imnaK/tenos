@@ -16,33 +16,34 @@ header {
 
   .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    padding: 2rem;
+    gap: 4rem;
 
     @include respond-to(md) {
       flex-direction: row;
     }
+  }
 
-    .header-section {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      padding: 4rem 2rem;
-      flex: 1;
+  .header-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
 
-      @include respond-to(md) {
-        padding: 8rem 4rem;
-      }
+    h1,
+    p {
+      text-shadow: 0 0 1rem #000;
+    }
 
-      h1,
-      p {
-        text-shadow: 0 0 1rem #000;
-      }
+    &.with-logo {
+      perspective: 1000px;
+      align-items: center;
 
-      &.with-logo {
-        perspective: 1000px;
-        align-items: center;
+      img {
+        width: 12rem;
 
-        img {
+        @include respond-to(md) {
           width: 20rem;
         }
       }
@@ -51,27 +52,50 @@ header {
 }
 
 section {
-  border-top: 1px solid $nord-pn-400;
   background-size: cover !important;
 
+  & + section {
+    border-top: 1px solid $nord-pn-400;
+  }
+
   &#section-windows {
-    background: linear-gradient(to left, $nord-pn-100 50%, transparent 75%),
+    background: linear-gradient(to top, $nord-pn-100 50%, transparent 75%),
       url("../img/index/section-windows.jpg") no-repeat center center fixed;
+
+    @include respond-to(md) {
+      background: linear-gradient(to left, $nord-pn-100 50%, transparent 75%),
+        url("../img/index/section-windows.jpg") no-repeat center center fixed;
+    }
   }
 
   &#section-apple {
-    background: linear-gradient(to right, $nord-pn-100 50%, transparent 75%),
+    background: linear-gradient(to top, $nord-pn-100 50%, transparent 75%),
       url("../img/index/section-apple.jpg") no-repeat center center fixed;
+
+    @include respond-to(md) {
+      background: linear-gradient(to right, $nord-pn-100 50%, transparent 75%),
+        url("../img/index/section-apple.jpg") no-repeat center center fixed;
+    }
   }
 
   &#section-linux {
-    background: linear-gradient(to left, $nord-pn-100 50%, transparent 75%),
+    background: linear-gradient(to top, $nord-pn-100 50%, transparent 75%),
       url("../img/index/section-linux.jpg") no-repeat center center fixed;
+
+    @include respond-to(md) {
+      background: linear-gradient(to left, $nord-pn-100 50%, transparent 75%),
+        url("../img/index/section-linux.jpg") no-repeat center center fixed;
+    }
   }
 
   &#section-android {
-    background: linear-gradient(to right, $nord-pn-100 50%, transparent 75%),
+    background: linear-gradient(to top, $nord-pn-100 50%, transparent 75%),
       url("../img/index/section-android.jpg") no-repeat center center fixed;
+
+    @include respond-to(md) {
+      background: linear-gradient(to right, $nord-pn-100 50%, transparent 75%),
+        url("../img/index/section-android.jpg") no-repeat center center fixed;
+    }
   }
 
   &:nth-of-type(even) {

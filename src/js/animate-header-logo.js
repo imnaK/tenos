@@ -1,3 +1,5 @@
+const multiplier = 0.03;
+
 $(document).ready(function () {
   $(document).mousemove(function (event) {
     // mouse position relative to the document scroll
@@ -7,9 +9,9 @@ $(document).ready(function () {
     $("#header-logo").css(
       "transform",
       "rotateY(" +
-        (mouseXPos - window.outerWidth / 2) / 50 +
+        (mouseXPos - window.outerWidth / 2) * multiplier +
         "deg) rotateX(" +
-        ((mouseYPos - window.outerHeight / 2) / 50) * -1 +
+        (mouseYPos - window.outerHeight / 2) * multiplier * -1 +
         "deg)"
     );
   });

@@ -1,0 +1,39 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+header {
+  position: relative;
+  min-height: 32rem;
+  max-height: 80vh;
+  height: max-content;
+  padding-top: calc($navbar-height + $navbar-padding * 2);
+  background-image: url("../img/subpage/header.svg");
+  background-color: #0007;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 4rem;
+
+    @include respond-to(md) {
+      flex-direction: row;
+    }
+  }
+
+  .header-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &.with-icon {
+      font-size: 8rem;
+    }
+  }
+}
