@@ -1,90 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startseite - tenos</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/animate-header-logo.js"></script>
 
-  <script src="../js/jquery-3.7.1.min.js"></script>
-  <script src="../js/animate-header-logo.js"></script>
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
+    <script src="../fontawesome/js/all.min.js"></script>
 
-  <link rel="stylesheet" href="../fontawesome/css/all.min.css">
-  <script src="../fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/load-navbar.js"></script>
+  </head>
 
-  <link rel="stylesheet" href="../css/all.css">
-  <script src="../js/load-navbar.js"></script>
-</head>
-
-<body>
-  <main style="margin-top: unset;">
-    <header>
-      <div class="container">
-        <div class="header-section">
-          <h1>Hey und willkommen auf Tenos.</h1>
-          <p>Du willst also etwas über Abstammungen von Betriebssystemen wissen? Linux, MacOS, Windows oder Android? Dann bist du hier genau richtig!</p>
-        </div>
-        <div class="header-section with-logo">
-          <img id="header-logo" src="../img/logo.svg" alt="logo">
-        </div>
-      </div>
-      <a href="#start-sections" id="button-down">
-        <span class="fa-solid fa-angle-down"></span>
-      </a>
-    </header>
-
-    <div id="start-sections"></div>
-
-    <section id="section-windows">
-      <div class="container">
-        <div class="left-part">
-          <div class="icon">
-            <span class="section-icon fa-brands fa-microsoft nord-a-300"></span>
+  <body>
+    <main style="margin-top: unset">
+      <header>
+        <div class="container">
+          <div class="header-section">
+            <h1>Hey und willkommen auf Tenos.</h1>
+            <p>
+              Du willst also etwas über Abstammungen von Betriebssystemen
+              wissen? Linux, MacOS, Windows oder Android? Dann bist du hier
+              genau richtig!
+            </p>
+            <p>
+              Unten sind einige Betriebssysteme aufgeführt. Zu jedem steht ein
+              kleiner Einleitungstext und ein Link für weiteres Interesse, sowie
+              oben in der Navigation.
+            </p>
+          </div>
+          <div class="header-section with-logo">
+            <img id="header-logo" src="../img/logo.svg" alt="logo" />
           </div>
         </div>
-        <div class="right-part">
-          <h2>Windows</h2>
-          <p>Windows ist ein Betriebssystem, welches von Microsoft entwickelt wurde. Es ist ein geschlossenes Betriebssystem, welches nur auf Windows-Geräten läuft. Es ist ein sehr stabiles Betriebssystem, welches auch sehr sicher ist. Es gibt viele verschiedene Versionen von Windows, die sich in der Benutzeroberfläche und den mitgelieferten Programmen unterscheiden. Die bekanntesten Versionen von Windows sind Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Vista, Windows XP, Windows 2000, Windows ME, Windows 98, Windows 95, Windows 3.1, Windows 3.0, Windows 2.0, Windows 1.0 und Windows 0.1.</p>
-        </div>
-      </div>
-    </section>
+        <a href="#start-sections" id="button-down">
+          <span class="fa-solid fa-angle-down"></span>
+        </a>
+      </header>
 
-    <section id="section-apple">
-      <div class="container">
-        <div class="left-part">
-          <span class="section-icon fa-brands fa-apple nord-a-400"></span>
-        </div>
-        <div class="right-part">
-          <h2>MacOS</h2>
-          <p>MacOS ist ein Betriebssystem, welches von Apple entwickelt wurde. Es ist ein Unix-basiertes Betriebssystem und ist das Standard-Betriebssystem auf allen Mac-Computern. Es ist ein geschlossenes Betriebssystem, welches nur auf Apple-Geräten läuft. Es ist ein sehr stabiles Betriebssystem, welches auch sehr sicher ist. Es gibt viele verschiedene Versionen von MacOS, die sich in der Benutzeroberfläche und den mitgelieferten Programmen unterscheiden. Die bekanntesten Versionen von MacOS sind MacOS X, MacOS 9, MacOS 8, MacOS 7, MacOS 6, MacOS 5, MacOS 4, MacOS 3, MacOS 2 und MacOS 1.</p>
-        </div>
-      </div>
-    </section>
+      <div id="start-sections"></div>
 
-    <section id="section-linux">
-      <div class="container">
-        <div class="left-part">
-          <span class="section-icon fa-brands fa-linux nord-a-200"></span>
+      <section id="section-windows">
+        <div class="container">
+          <div class="left-part">
+            <div class="icon">
+              <span
+                class="section-icon fa-brands fa-microsoft nord-a-300"
+              ></span>
+            </div>
+          </div>
+          <div class="right-part">
+            <h2>Windows</h2>
+            <p>
+              Windows ist ein Betriebssystem, welches von Microsoft entwickelt
+              wurde. Es ist ein geschlossenes Betriebssystem, welches nur auf
+              Windows-Geräten läuft. Es ist ein sehr stabiles Betriebssystem,
+              welches auch sehr sicher ist. Es gibt viele verschiedene Versionen
+              von Windows, die sich in der Benutzeroberfläche und den
+              mitgelieferten Programmen unterscheiden. Die bekanntesten
+              Versionen von Windows sind Windows 10, Windows 8.1, Windows 8,
+              Windows 7, Windows Vista, Windows XP, Windows 2000, Windows ME,
+              Windows 98, Windows 95, Windows 3.1, Windows 3.0, Windows 2.0,
+              Windows 1.0 und Windows 0.1.
+            </p>
+            <a href="./windows.html" class="btn btn-icon nord-a-300"
+              >Mehr Lesen<span class="fa-solid fa-arrow-right"></span
+            ></a>
+          </div>
         </div>
-        <div class="right-part">
-          <h2>Linux</h2>
-          <p>Linux ist ein freies Betriebssystem, welches auf dem Linux-Kernel basiert. Es ist eine Alternative zu Windows und MacOS. Linux ist ein Open-Source-Projekt, welches von vielen Entwicklern auf der ganzen Welt entwickelt wird. Es gibt viele verschiedene Linux-Distributionen, die sich in der Benutzeroberfläche und den mitgelieferten Programmen unterscheiden. Die bekanntesten Linux-Distributionen sind Ubuntu, Debian, Linux Mint, Fedora, openSUSE, Arch Linux und Manjaro Linux.</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="section-android">
-      <div class="container">
-        <div class="left-part">
-          <span class="section-icon fa-brands fa-android nord-a-500"></span>
+      <section id="section-apple">
+        <div class="container">
+          <div class="left-part">
+            <span class="section-icon fa-brands fa-apple nord-a-400"></span>
+          </div>
+          <div class="right-part">
+            <h2>MacOS / iOS</h2>
+            <p>
+              MacOS ist ein Betriebssystem, welches von Apple entwickelt wurde.
+              Es ist ein Unix-basiertes Betriebssystem und ist das
+              Standard-Betriebssystem auf allen Mac-Computern. Es ist ein
+              geschlossenes Betriebssystem, welches nur auf Apple-Geräten läuft.
+              Es ist ein sehr stabiles Betriebssystem, welches auch sehr sicher
+              ist. Es gibt viele verschiedene Versionen von MacOS, die sich in
+              der Benutzeroberfläche und den mitgelieferten Programmen
+              unterscheiden. Die bekanntesten Versionen von MacOS sind MacOS X,
+              MacOS 9, MacOS 8, MacOS 7, MacOS 6, MacOS 5, MacOS 4, MacOS 3,
+              MacOS 2 und MacOS 1.
+            </p>
+            <a href="./apple.html" class="btn btn-icon nord-a-400"
+              >Mehr Lesen<span class="fa-solid fa-arrow-right"></span
+            ></a>
+          </div>
         </div>
-        <div class="right-part">
-          <h2>Android</h2>
-          <p>Android ist ein Betriebssystem, welches von Google entwickelt wurde. Es ist ein Linux-basiertes Betriebssystem und ist das Standard-Betriebssystem auf allen Android-Geräten. Es ist ein sehr stabiles Betriebssystem, welches auch sehr sicher ist. Es gibt viele verschiedene Versionen von Android, die sich in der Benutzeroberfläche und den mitgelieferten Programmen unterscheiden. Die bekanntesten Versionen von Android sind Android 11, Android 10, Android 9, Android 8, Android 7, Android 6, Android 5, Android 4, Android 3, Android 2, Android 1 und Android 0.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
+      </section>
 
+      <section id="section-linux">
+        <div class="container">
+          <div class="left-part">
+            <span class="section-icon fa-brands fa-linux nord-a-200"></span>
+          </div>
+          <div class="right-part">
+            <h2>Linux</h2>
+            <p>
+              Linux ist ein freies Betriebssystem, welches auf dem Linux-Kernel
+              basiert. Es ist eine Alternative zu Windows und MacOS. Linux ist
+              ein Open-Source-Projekt, welches von vielen Entwicklern auf der
+              ganzen Welt entwickelt wird. Es gibt viele verschiedene
+              Linux-Distributionen, die sich in der Benutzeroberfläche und den
+              mitgelieferten Programmen unterscheiden. Die bekanntesten
+              Linux-Distributionen sind Ubuntu, Debian, Linux Mint, Fedora,
+              openSUSE, Arch Linux und Manjaro Linux.
+            </p>
+            <a href="./linux.html" class="btn btn-icon nord-a-200"
+              >Mehr Lesen<span class="fa-solid fa-arrow-right"></span
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-android">
+        <div class="container">
+          <div class="left-part">
+            <span class="section-icon fa-brands fa-android nord-a-500"></span>
+          </div>
+          <div class="right-part">
+            <h2>Android</h2>
+            <p>
+              Android ist ein Betriebssystem, welches von Google entwickelt
+              wurde. Es ist ein Linux-basiertes Betriebssystem und ist das
+              Standard-Betriebssystem auf allen Android-Geräten. Es ist ein sehr
+              stabiles Betriebssystem, welches auch sehr sicher ist. Es gibt
+              viele verschiedene Versionen von Android, die sich in der
+              Benutzeroberfläche und den mitgelieferten Programmen
+              unterscheiden. Die bekanntesten Versionen von Android sind Android
+              11, Android 10, Android 9, Android 8, Android 7, Android 6,
+              Android 5, Android 4, Android 3, Android 2, Android 1 und Android
+              0.
+            </p>
+            <a href="./android.html" class="btn btn-icon nord-a-500"
+              >Mehr Lesen<span class="fa-solid fa-arrow-right"></span
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

@@ -96,6 +96,24 @@ section {
   }
 }
 
+.btn {
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  border: 0.125rem solid currentColor;
+  border-radius: 0.25rem;
+}
+
+.btn-icon [data-prefix=fas] {
+  width: 0;
+  transition: 0.1s ease-out;
+}
+.btn-icon:hover [data-prefix=fas] {
+  margin-left: 0.5rem;
+  width: 1rem;
+}
+
 .nord-a-100 {
   color: #BF616A;
 }

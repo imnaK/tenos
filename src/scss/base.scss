@@ -89,6 +89,26 @@ section {
   }
 }
 
+.btn {
+  display: block;
+  width: max-content;
+  padding: .5rem 1rem;
+  border: .125rem solid currentColor;
+  border-radius: $default-radius;
+}
+
+.btn-icon {
+  [data-prefix="fas"] {
+    width: 0;
+    transition: $default-transition;
+  }
+
+  &:hover [data-prefix="fas"] {
+    margin-left: .5rem;
+    width: 1rem;
+  }
+}
+
 .nord-a-100 {
   color: $nord-a-100;
 }

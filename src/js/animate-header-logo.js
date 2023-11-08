@@ -1,11 +1,16 @@
 $(document).ready(function () {
-  let mouseXPos = 0;
-
   $(document).mousemove(function (event) {
-    mouseXPos = event.pageX;
-  });
+    // mouse position relative to the document scroll
+    const mouseXPos = event.pageX - $(window).scrollLeft();
+    const mouseYPos = event.pageY - $(window).scrollTop();
 
-  setInterval(function () {
-    $("#header-logo").css("transform", "rotateY(" + (mouseXPos - window.outerWidth / 2) / 50 + "deg)");
-  }, 50);
+    $("#header-logo").css(
+      "transform",
+      "rotateY(" +
+        (mouseXPos - window.outerWidth / 2) / 50 +
+        "deg) rotateX(" +
+        ((mouseYPos - window.outerHeight / 2) / 50) * -1 +
+        "deg)"
+    );
+  });
 });
