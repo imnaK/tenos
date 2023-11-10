@@ -10,6 +10,8 @@ header {
   background-image: url("../img/index/header.jpg");
   background-color: #0007;
   background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,43 +60,19 @@ section {
     border-top: 1px solid $nord-pn-400;
   }
 
-  &#section-windows {
-    background: linear-gradient(to top, $nord-pn-100 50%, transparent 75%),
-      url("../img/index/section-windows.jpg") no-repeat center center fixed;
+  $os-types: windows, apple, linux, android;
 
-    @include respond-to(md) {
-      background: linear-gradient(to left, $nord-pn-100 50%, transparent 75%),
-        url("../img/index/section-windows.jpg") no-repeat center center fixed;
-    }
-  }
+  @for $i from 1 through length($os-types) {
+    $direction: if($i % 2 == 0, to right, to left);
 
-  &#section-apple {
-    background: linear-gradient(to top, $nord-pn-100 50%, transparent 75%),
-      url("../img/index/section-apple.jpg") no-repeat center center fixed;
+    &#section-#{nth($os-types, $i)} {
+      background: linear-gradient(to top, $nord-pn-100 50%, transparent 75%),
+        url("../img/index/section-#{nth($os-types, $i)}.jpg") no-repeat center center fixed;
 
-    @include respond-to(md) {
-      background: linear-gradient(to right, $nord-pn-100 50%, transparent 75%),
-        url("../img/index/section-apple.jpg") no-repeat center center fixed;
-    }
-  }
-
-  &#section-linux {
-    background: linear-gradient(to top, $nord-pn-100 50%, transparent 75%),
-      url("../img/index/section-linux.jpg") no-repeat center center fixed;
-
-    @include respond-to(md) {
-      background: linear-gradient(to left, $nord-pn-100 50%, transparent 75%),
-        url("../img/index/section-linux.jpg") no-repeat center center fixed;
-    }
-  }
-
-  &#section-android {
-    background: linear-gradient(to top, $nord-pn-100 50%, transparent 75%),
-      url("../img/index/section-android.jpg") no-repeat center center fixed;
-
-    @include respond-to(md) {
-      background: linear-gradient(to right, $nord-pn-100 50%, transparent 75%),
-        url("../img/index/section-android.jpg") no-repeat center center fixed;
+      @include respond-to(md) {
+        background: linear-gradient($direction, $nord-pn-100 50%, transparent 75%),
+          url("../img/index/section-#{nth($os-types, $i)}.jpg") no-repeat center center fixed;
+      }
     }
   }
 
@@ -126,6 +104,12 @@ section {
     .right-part {
       flex: 1;
       padding: 4rem 2rem;
+    }
+
+    .right-part {
+      text-align: justify;
+      word-break: keep-all;
+      hyphens: auto;
     }
 
     h2 {

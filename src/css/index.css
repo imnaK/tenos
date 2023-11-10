@@ -11,6 +11,8 @@ header {
   background-image: url("../img/index/header.jpg");
   background-color: rgba(0, 0, 0, 0.4666666667);
   background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,6 +115,12 @@ section .container .left-part,
 section .container .right-part {
   flex: 1;
   padding: 4rem 2rem;
+}
+section .container .right-part {
+  text-align: justify;
+  word-break: keep-all;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 section .container h2 {
   margin-left: auto;
