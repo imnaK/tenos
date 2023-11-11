@@ -9,8 +9,8 @@ header {
   height: 100vh;
   padding-top: 5rem;
   background-image: url("../img/index/header.jpg");
-  background-color: rgba(0, 0, 0, 0.4666666667);
-  background-blend-mode: multiply;
+  background-color: #2e3440;
+  background-blend-mode: luminosity;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
