@@ -52,7 +52,7 @@ li.nav-item {
 
     &:hover {
       background-color: $black-opacity-25;
-      box-shadow: 0 0 1rem 0 #fff7;
+      box-shadow: 0 0 1rem 0 $nord-pn-100;
       filter: saturate(2);
 
       .icon {

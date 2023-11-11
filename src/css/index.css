@@ -36,7 +36,7 @@ header .header-section {
 }
 header .header-section h1,
 header .header-section p {
-  text-shadow: 0 0 1rem #000;
+  text-shadow: 0 0 2rem #000;
 }
 header .header-section.with-logo {
   perspective: 1000px;
