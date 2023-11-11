@@ -72,10 +72,9 @@ section .container .version-logo {
   width: 6rem;
   height: 6rem;
   border-radius: 3rem;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: #434c5e;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
   overflow: visible;
-  border: 1px solid #4c566a;
 }
 
 .release-date {
