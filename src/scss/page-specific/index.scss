@@ -7,8 +7,8 @@ header {
   max-height: 100vh;
   height: 100vh;
   padding-top: calc($navbar-height + $navbar-padding * 2);
-  background-image: url("../img/index/header.jpg");
-  background-color: $nord-pn-100;
+  // background-image: url("../img/index/header.jpg");
+  background-color: $black-opacity-25;
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
   background-size: cover;

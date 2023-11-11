@@ -47,10 +47,18 @@ ul {
 
 body {
   background-color: #2e3440;
-  background-image: url("../img/background.jpg");
+  background: url("../img/background.jpg");
   background-attachment: fixed;
   font-family: "Mooli", sans-serif;
   color: #eceff4;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 10px 10px, #3b4252 2px, transparent 2px);
+  background-size: 10px 10px;
+  pointer-events: none;
 }
 
 header {

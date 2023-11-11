@@ -47,22 +47,22 @@ function getNavElement() {
     {
       name: "Windows",
       link: "windows.html",
-      faIcon: ["fa-brands", "fa-microsoft", "nord-a-300"],
+      faIcon: ["fa-brands", "fa-microsoft", "nord-f-400"],
     },
     {
       name: "MacOS",
-      link: "apple.html",
-      faIcon: ["fa-brands", "fa-apple", "nord-a-400"],
+      link: "macos.html",
+      faIcon: ["fa-brands", "fa-apple", "nord-a-200"],
     },
     {
       name: "Linux",
       link: "linux.html",
-      faIcon: ["fa-brands", "fa-linux", "nord-a-200"],
+      faIcon: ["fa-brands", "fa-linux", "nord-a-300"],
     },
     {
       name: "Android",
       link: "android.html",
-      faIcon: ["fa-brands", "fa-android", "nord-a-500"],
+      faIcon: ["fa-brands", "fa-android", "nord-a-400"],
     },
   ];
 

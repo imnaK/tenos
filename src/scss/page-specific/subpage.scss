@@ -31,6 +31,16 @@ header {
     justify-content: center;
     flex-direction: column;
 
+    text-align: justify;
+    word-break: keep-all;
+    hyphens: auto;
+
+    @include respond-to(md) {
+      text-align: initial;
+      word-break: initial;
+      hyphens: initial;
+    }
+
     &.with-icon {
       font-size: 8rem;
     }
@@ -38,10 +48,6 @@ header {
 }
 
 section {
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0, transparent 5px);
-  background-size: 5px 5px;
-  background-repeat: repeat;
-
   &:nth-child(odd) {
     background-color: #0001;
   }
@@ -57,7 +63,7 @@ section {
     &::before {
       content: "";
       position: absolute;
-      top: 7rem;
+      top: 6rem;
       left: 3rem;
       border-left: 1px solid $nord-pn-400;
       height: calc(100% + 6rem);
@@ -69,7 +75,7 @@ section {
       display: flex;
       justify-content: center;
       align-items: center;
-      top: 0;
+      top: -1rem;
       left: 0;
       padding: 1rem;
       width: 6rem;
