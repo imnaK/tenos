@@ -37,6 +37,14 @@ header .header-section.with-icon {
   font-size: 8rem;
 }
 
+section {
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0, transparent 5px);
+  background-size: 5px 5px;
+  background-repeat: repeat;
+}
+section:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.0666666667);
+}
 section:last-child .container::before {
   content: unset;
 }
@@ -51,6 +59,7 @@ section .container::before {
   left: 3rem;
   border-left: 1px solid #4c566a;
   height: calc(100% + 6rem);
+  z-index: 1;
 }
 section .container .version-logo {
   position: absolute;

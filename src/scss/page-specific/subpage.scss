@@ -38,7 +38,13 @@ header {
 }
 
 section {
-  // outline: 1px solid #fff3;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0, transparent 5px);
+  background-size: 5px 5px;
+  background-repeat: repeat;
+
+  &:nth-child(odd) {
+    background-color: #0001;
+  }
 
   &:last-child .container::before {
     content: unset;
@@ -55,6 +61,7 @@ section {
       left: 3rem;
       border-left: 1px solid $nord-pn-400;
       height: calc(100% + 6rem);
+      z-index: 1;
     }
   
     .version-logo {
