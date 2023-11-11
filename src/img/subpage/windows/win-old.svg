@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="400" height="498" version="1.1" viewBox="0 0 400 498" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <radialGradient id="radialGradient12795" cx="371.8" cy="68.211" r="200" gradientTransform="matrix(1.9675 0 0 2.1975 -363.02 -118.39)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop offset="1"/>
+  </radialGradient>
+  <radialGradient id="radialGradient18505-8" cx="148.2" cy="346.84" r="58.75" gradientTransform="matrix(-3.6853 0 .00013559 -4.9021 765.6 1847.2)" gradientUnits="userSpaceOnUse">
+   <stop offset=".29167"/>
+   <stop stop-color="#fff" offset="1"/>
+  </radialGradient>
+  <radialGradient id="radialGradient18505-7" cx="154.32" cy="309.3" r="58.75" gradientTransform="matrix(-3.7362 7.1522e-5 0 -3.4723 812.04 1293)" gradientUnits="userSpaceOnUse">
+   <stop offset=".17647"/>
+   <stop stop-color="#fff" offset="1"/>
+  </radialGradient>
+  <radialGradient id="radialGradient18505-7-9" cx="165.98" cy="304.23" r="58.75" gradientTransform="matrix(-4.7362 .00011225 0 -3.4723 1064.3 1287.4)" gradientUnits="userSpaceOnUse">
+   <stop offset=".21114"/>
+   <stop stop-color="#fff" offset="1"/>
+  </radialGradient>
+ </defs>
+ <g>
+  <rect width="400" height="498" fill="url(#radialGradient12795)" style="paint-order:fill markers stroke"/>
+  <path d="m63 63v168h117.5v-168z" fill="url(#radialGradient18505-8)" style="paint-order:fill markers stroke"/>
+  <path d="m219.5 63v168h117.5v-168z" style="paint-order:fill markers stroke"/>
+  <path d="m63 267v168h117.5v-168z" fill="url(#radialGradient18505-7)" style="paint-order:fill markers stroke"/>
+  <path d="m219.5 267v168h117.5v-168z" fill="url(#radialGradient18505-7-9)" style="paint-order:fill markers stroke"/>
+ </g>
+</svg>

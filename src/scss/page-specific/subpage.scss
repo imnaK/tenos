@@ -37,3 +37,47 @@ header {
     }
   }
 }
+
+section {
+  // outline: 1px solid #fff3;
+
+  &:last-child .container::before {
+    content: unset;
+  }
+
+  .container {
+    position: relative;
+    padding-left: 8rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7rem;
+      left: 3rem;
+      border-left: 1px solid $nord-pn-400;
+      height: calc(100% + 6rem);
+    }
+  
+    .version-logo {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      padding: 1rem;
+      width: 6rem;
+      height: 6rem;
+      border-radius: 3rem;
+      background-color: $black-opacity-25;
+      box-shadow: $default-shadow;
+      overflow: visible;
+      border: 1px solid $nord-pn-400;
+    }
+  }
+}
+
+.release-date {
+  font-size: 1rem;
+  color: $nord-f-400;
+}
