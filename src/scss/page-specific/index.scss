@@ -8,8 +8,8 @@ header {
   height: 100vh;
   padding-top: calc($navbar-height + $navbar-padding * 2);
   background-image: url("../img/index/header.jpg");
-  background-color: #0007;
-  background-blend-mode: multiply;
+  background-color: $nord-pn-100;
+  background-blend-mode: luminosity;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
