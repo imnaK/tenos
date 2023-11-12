@@ -7,7 +7,6 @@ header {
   max-height: 100vh;
   height: 100vh;
   padding-top: calc($navbar-height + $navbar-padding * 2);
-  // background-image: url("../img/index/header.jpg");
   background-color: $black-opacity-25;
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
@@ -32,6 +31,10 @@ header {
     justify-content: center;
     flex-direction: column;
     flex: 1;
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 4rem);
+    }
 
     h1,
     p {
