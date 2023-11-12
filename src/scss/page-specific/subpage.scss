@@ -48,25 +48,29 @@ header {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+
   &:nth-child(odd) {
     background-color: #0001;
-  }
-
-  &:last-child .container::before {
-    content: unset;
   }
 
   .container {
     position: relative;
     padding-left: 8rem;
 
+    &:last-child::before {
+      content: unset;
+    }
+
     &::before {
       content: "";
       position: absolute;
-      top: 6rem;
+      top: 7rem;
       left: 3rem;
       border-left: 1px solid $nord-pn-400;
-      height: calc(100% + 6rem);
+      height: 100%;
       z-index: 1;
     }
   
@@ -75,7 +79,7 @@ section {
       display: flex;
       justify-content: center;
       align-items: center;
-      top: -1rem;
+      top: 0;
       left: 0;
       padding: 1rem;
       width: 6rem;
