@@ -2,6 +2,10 @@
   font-family: "Mooli";
   src: url("../fonts/Mooli-Regular.ttf");
 }
+html {
+  scroll-padding-top: 6rem;
+}
+
 header {
   position: relative;
   min-height: 32rem;
