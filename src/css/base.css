@@ -153,6 +153,30 @@ section {
   transition: 0.1s ease-out;
 }
 
+.info-box {
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+.info-box .info-header, .info-box .info-body {
+  padding: 1rem;
+  background-color: #2e3440;
+}
+.info-box .info-header {
+  color: #ebcb8b;
+}
+.info-box .info-header .info-icon {
+  margin-right: 0.5rem;
+}
+.info-box .info-header .info-title {
+  display: inline;
+  font-weight: bold;
+  border-left: 1px solid #ebcb8b;
+  padding-left: 0.75rem;
+}
 .nord-a-100 {
   color: #bf616a;
 }

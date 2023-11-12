@@ -152,6 +152,39 @@ section {
   }
 }
 
+.info-box {
+  border-radius: $default-radius;
+  display: flex;
+  flex-direction: column;
+  // max-width: 48rem;
+  gap: 1px;
+  border-radius: $default-radius;
+  overflow: hidden;
+
+  .info-header, .info-body {
+    padding: 1rem;
+    background-color: $nord-pn-100;
+  }
+
+  .info-header {
+    color: $nord-a-300;
+
+    .info-icon {
+      margin-right: .5rem;
+    }
+
+    .info-title {
+      display: inline;
+      font-weight: bold;
+      border-left: 1px solid $nord-a-300;
+      padding-left: .75rem;
+    }
+  }
+
+  .info-body {
+  }
+}
+
 .nord-a-100 {
   color: $nord-a-100;
 }
