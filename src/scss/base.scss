@@ -112,7 +112,9 @@ section {
 
 .btn-icon {
   [data-prefix="fas"] {
-    width: 0;
+    // somehow has to be 1px because else the inner svg will be out of bounds
+    width: 1px;
+    height: 1rem;
     transition: $default-transition;
   }
 
